@@ -78,6 +78,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi SpellLocal ctermbg=NONE ctermfg=243 cterm=undercurl guibg=NONE guifg=#767676 gui=undercurl guisp=#767676
     hi SpellRare ctermbg=NONE ctermfg=247 cterm=undercurl guibg=NONE guifg=#9e9e9e gui=undercurl guisp=#9e9e9e
     hi ColorColumn ctermbg=234 ctermfg=NONE cterm=NONE guibg=#1c1c1c guifg=NONE gui=NONE
+    hi LspReferenceText guibg=#444444
 
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
